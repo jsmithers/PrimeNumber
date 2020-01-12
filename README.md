@@ -27,8 +27,8 @@ The build process uses maven for build orchestration and dependency management. 
 
 ### Usage
 The prime number generation can be executed via the command line under the target directory using the following command:<br>
-`java -jar updox-challenge-1.0.0.jar {starting number] {ending number}`
-<p>
+`java -jar updox-challenge-1.0.0.jar {starting number} {ending number}`
+<br><br>
 The usage information can be printed using the following command:<br>
 `java -jar updox-challenge-1.0.0.jar -h`
 
