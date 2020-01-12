@@ -11,6 +11,7 @@ The first twenty-six prime numbers are: [2, 3, 5, 7, 11, 13, 17, 19, 23,	29, 31,
 * [Prime Number Definition](#prime-number-definition)
 * [Build](#build)
 * [Usage](#usage)
+* [Example](#example)
 * [Challenge Summary](#challenge-summary)
 * [Choices](#choices)
 
@@ -31,6 +32,54 @@ The prime number generation can be executed via the command line under the targe
 <br><br>
 The usage information can be printed using the following command:<br>
 `java -jar updox-challenge-1.0.0.jar -h`
+
+### Examples:
+**Correct Usage:**
+
+```
+$ java -jar updox-challenge-1.0.0.jar 7900 7920
+7901
+7907
+7919
+```
+**Too Few Arguments:**
+
+```
+$ java -jar updox-challenge-1.0.0.jar 1
+Not enough arguments were supplied, two numbers are required and only '1' was provided
+Usage: com.smithers.prime.PrimeNumberGeneratorImpl {starting number} {ending number}
+Displays a list of prime numbers between the starting number and ending number. The list of prime numbers is printed with a new line separating each entry.
+```
+**Help:**
+
+```
+$ java -jar updox-challenge-1.0.0.jar
+Usage: com.smithers.prime.PrimeNumberGeneratorImpl {starting number} {ending number}
+Displays a list of prime numbers between the starting number and ending number. The list of prime numbers is printed with a new line separating each entry.
+```
+```
+$ java -jar updox-challenge-1.0.0.jar -h
+Usage: com.smithers.prime.PrimeNumberGeneratorImpl {starting number} {ending number}
+Displays a list of prime numbers between the starting number and ending number. The list of prime numbers is printed with a new line separating each entry.
+```
+**Not a number:**
+
+```
+$ java -jar updox-challenge-1.0.0.jar 7900 interesting
+Caught error: The argument 'interesting' at index '1' is not a number.
+Usage: com.smithers.prime.PrimeNumberGeneratorImpl {starting number} {ending number}
+Displays a list of prime numbers between the starting number and ending number. The list of prime numbers is printed with a new line separating each entry.
+Exception in thread "main" java.lang.IllegalArgumentException: The argument 'interesting' at index '1' is not a number.
+        at com.smithers.prime.PrimeNumberGeneratorCmd.convertArgumentToNumber(PrimeNumberGeneratorCmd.java:46)
+        at com.smithers.prime.PrimeNumberGeneratorCmd.main(PrimeNumberGeneratorCmd.java:25)
+Caused by: java.lang.NumberFormatException: For input string: "interesting"
+        at java.lang.NumberFormatException.forInputString(Unknown Source)
+        at java.lang.Integer.parseInt(Unknown Source)
+        at java.lang.Integer.parseInt(Unknown Source)
+        at com.smithers.prime.PrimeNumberGeneratorCmd.convertArgumentToNumber(PrimeNumberGeneratorCmd.java:44)
+        ... 1 more
+```
+
 
 ## Challenge Summary
 Create a prime number generator using the below interface.
