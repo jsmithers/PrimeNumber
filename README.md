@@ -23,6 +23,14 @@ The first twenty-six prime numbers are: [2, 3, 5, 7, 11, 13, 17, 19, 23,	29, 31,
 **Instructions:**<br>
 In the root directory of this repository execute `mvn clean install`
 
+**Step-by-step:**
+
+```
+git clone git@github.com:jsmithers/PrimeNumber.git
+cd PrimeNumber
+mvn clean install
+```
+
 **Information:**<br>
 The build process uses maven for build orchestration and dependency management. The only required dependency is JUnit 4.12 for unit tests. The build process utilizes [Jacoco](https://www.eclemma.org/jacoco/index.html) in order to ensure 100% code coverage during unit testing. An executable jar will be placed under the `target` directory (`updox-challenge-1.0.0.jar`). A source and java doc jar will also be generated.
 
