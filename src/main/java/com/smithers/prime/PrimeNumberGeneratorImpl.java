@@ -54,7 +54,7 @@ public class PrimeNumberGeneratorImpl implements PrimeNumberGenerator {
 	 * Determines if the numerator is divisible by the denominator.
 	 * 
 	 * @param numerator
-	 * 			The number that we want to determine if is it divisible by the denominator.
+	 * 			The number that we want to determine if it is divisible by the denominator.
 	 * @param denominator
 	 * 			The number by which we want to determine if the numerator is divisible.
 	 * @return Returns true if the numerator is divisible by the denominator, false otherwise.
