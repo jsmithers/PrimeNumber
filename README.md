@@ -13,7 +13,7 @@ The first twenty-six prime numbers are: [2, 3, 5, 7, 11, 13, 17, 19, 23,	29, 31,
 * [Usage](#usage)
 * [Examples](#examples)
 * [Challenge Summary](#challenge-summary)
-* [Choices](#choices)
+* [Design Choices](#design-choices)
 
 ### Build
 **Environment:**
@@ -103,5 +103,5 @@ public interface PrimeNumberGenerator {
 * The code should handle inverse ranges such that 1-10 and 10-1 are equivalent.
 * The code should output [7901, 7907, 7919] when the range 7900 and 7920 is provided.
 
-## Choices
-* I chose to not use a logging framework since the only information that needs to displayed, besides the results, is printed during command line usage and in that case we can use stdout and stderr. A logging framework could be used if we intend for this to be executed as a library rather than a command line utility.
+## Design Choices
+* I chose to not use a logging framework since the only information that needs to be displayed, besides the results, is printed during command line usage and in that case we can use stdout and stderr. A logging framework could be used if we intend for this to be executed as a library rather than a command line utility.
