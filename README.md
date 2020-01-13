@@ -11,7 +11,7 @@ The first twenty-six prime numbers are: [2, 3, 5, 7, 11, 13, 17, 19, 23,	29, 31,
 * [Prime Number Definition](#prime-number-definition)
 * [Build](#build)
 * [Usage](#usage)
-* [Example](#example)
+* [Examples](#examples)
 * [Challenge Summary](#challenge-summary)
 * [Choices](#choices)
 
